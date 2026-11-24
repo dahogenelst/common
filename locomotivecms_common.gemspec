@@ -18,12 +18,13 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rake',       '~> 13.0.1'
+  spec.add_development_dependency 'rake',       '~> 13.0'
 
   spec.add_dependency 'activesupport',          '>= 5'
-  spec.add_dependency 'attr_extras',            '~> 7.1.0'
+  spec.add_dependency 'attr_extras',            '~> 7.1'
   spec.add_dependency 'colorize'
-  spec.add_dependency 'stringex', '~> 2.8.5'
+  spec.add_dependency 'stringex', '~> 2.8'
+  spec.add_dependency 'ostruct'  # stringex needs it, no longer a default gem since Ruby 4.0
 
-  spec.required_ruby_version = ['>= 3.0']
+  spec.required_ruby_version = ['>= 3.3']
 end
