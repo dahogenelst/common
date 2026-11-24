@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'attr_extras',            '~> 7.1'
   spec.add_dependency 'colorize'
   spec.add_dependency 'stringex', '~> 2.8'
+  spec.add_dependency 'ostruct'  # stringex needs it, no longer a default gem since Ruby 4.0
 
   spec.required_ruby_version = ['>= 3.3']
 end
